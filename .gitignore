@@ -1,3 +1,7 @@
-/sdkconfig
-/managed_components
+.DS_Store
+.cache
+/build
 /factory
+/managed_components
+/sdkconfig
+dependencies.lock
