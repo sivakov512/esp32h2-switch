@@ -1,5 +1,7 @@
 .DS_Store
 .cache
+/.envrc
+/.zed
 /build
 /factory
 /managed_components
