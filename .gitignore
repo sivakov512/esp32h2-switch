@@ -5,6 +5,5 @@
 /build
 /factory
 /managed_components
-/schemas/**/*-backups
 /sdkconfig
 dependencies.lock
