@@ -4808,7 +4808,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 231.14 118.11 0)
 			(effects
 				(font
@@ -4881,7 +4881,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 115.2652 116.84 0)
 			(effects
 				(font
@@ -5017,7 +5017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 191.77 128.27 0)
 			(effects
 				(font
@@ -5086,7 +5086,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 210.82 109.22 0)
 			(effects
 				(font
@@ -5366,7 +5366,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 73.3552 116.84 0)
 			(effects
 				(font
@@ -5503,7 +5503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 196.85 109.22 0)
 			(effects
 				(font
@@ -5723,7 +5723,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 175.26 71.628 90)
 			(effects
 				(font
@@ -5791,7 +5791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sivakov_Relays_THT:Relay_SPDT_Relpol-RM51"
 			(at 173.99 132.08 0)
 			(effects
 				(font
@@ -5870,7 +5870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 209.042 99.06 90)
 			(effects
 				(font
@@ -5939,7 +5939,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 161.29 73.66 0)
 			(effects
 				(font
@@ -6088,7 +6088,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sivakov_Capacitors_THT:CP_Radial_D5.0mm_P1.50mm"
 			(at 100.0252 116.84 0)
 			(effects
 				(font
@@ -6292,7 +6292,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Varistor:RV_Disc_D9mm_W3.4mm_P5mm"
 			(at 82.042 74.93 90)
 			(effects
 				(font
@@ -6405,7 +6405,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sivakov_FuseHolders_THT:FuseHolder_THT_5x20mm_PTF76_RM15mm"
 			(at 76.2 72.898 90)
 			(effects
 				(font
@@ -6474,7 +6474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Sivakov_Capacitors_THT:CP_Radial_D5.0mm_P1.50mm"
 			(at 60.6552 116.84 0)
 			(effects
 				(font
@@ -6611,7 +6611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
 			(at 233.68 67.31 0)
 			(effects
 				(font
@@ -6719,7 +6719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 48.26 73.66 0)
 			(effects
 				(font
@@ -6857,7 +6857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
 			(at 198.12 67.31 0)
 			(effects
 				(font
@@ -7032,7 +7032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 244.602 110.49 90)
 			(effects
 				(font
@@ -7437,7 +7437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 231.902 99.06 90)
 			(effects
 				(font
