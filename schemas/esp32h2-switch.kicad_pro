@@ -503,7 +503,7 @@
     "netclass_patterns": [
       {
         "netclass": "AC",
-        "pattern": "L$|N$|\\/L_.*"
+        "pattern": "\\/?(L$|N$|L_.*)"
       }
     ]
   },
