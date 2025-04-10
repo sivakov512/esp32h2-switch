@@ -5,8 +5,6 @@
 #include "common.h"
 #include "matter.h"
 
-namespace attribute = esp_matter::attribute;
-namespace cluster = esp_matter::cluster;
 namespace endpoint = esp_matter::endpoint;
 namespace node = esp_matter::node;
 
@@ -28,10 +26,10 @@ static esp_err_t AttributeUpdateCallback(
     void *priv_data) {
   esp_err_t err = ESP_OK;
 
-  if (type == esp_matter::attribute::PRE_UPDATE and priv_data != nullptr) {
+  if (type == esp_matter::attribute::PRE_UPDATE && priv_data != nullptr) {
     auto *driver = static_cast<Driver *>(priv_data);
 
-    err = driver->SetState(val->val.b);
+    err = driver->SetRelayState(val->val.b);
   }
 
   return err;
