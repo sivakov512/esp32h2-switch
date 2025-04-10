@@ -36,4 +36,7 @@ extern "C" void app_main() {  // NOLINT
 
   err = StartMatterStack(&g_driver);
   ABORT_APP_ON_FAILURE(err == ESP_OK, "Failed to start Matter, err: %d", err);
+
+  err = g_driver.SetLedState(true);
+  ABORT_APP_ON_FAILURE(err == ESP_OK, "Failed to set LED state, err: %d", err);
 }

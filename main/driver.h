@@ -9,8 +9,11 @@ public:
 
   esp_err_t Init();
 
-  esp_err_t SetState(bool val);
+  esp_err_t SetRelayState(bool val);
+
+  esp_err_t SetLedState(bool val);
 
 private:
   gpio_num_t relay_gpio_;
+  gpio_num_t led_gpio_;
 };
