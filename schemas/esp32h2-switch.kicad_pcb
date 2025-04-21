@@ -8229,6 +8229,22 @@
 			)
 		)
 	)
+	(via
+		(at 101.854 139.954)
+		(size 1.6)
+		(drill 1)
+		(layers "F.Cu" "B.Cu")
+		(net 0)
+		(uuid "6a64919a-0749-4a50-8018-4650df7bab14")
+	)
+	(via
+		(at 193.04 68.834)
+		(size 1.6)
+		(drill 1)
+		(layers "F.Cu" "B.Cu")
+		(net 0)
+		(uuid "a0ab72a7-3148-4e28-8be8-5f046aae7882")
+	)
 	(segment
 		(start 118.745 112.395)
 		(end 129.54 101.6)
