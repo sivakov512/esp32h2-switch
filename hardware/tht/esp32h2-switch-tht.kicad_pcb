@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "ESP32-H2 smart switch")
+		(date "2025-05-01")
+		(rev "1.0")
+		(company "SIVAKOV.TECH")
+		(comment 1 "THT version for hand soldering")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -10897,7 +10904,7 @@
 		(polygon
 			(pts
 				(xy 104.14 73.66) (xy 187.96 73.66) (xy 187.96 102.235) (xy 146.953104 102.235) (xy 143.328564 105.918)
-				(xy 124.714 105.918) (xy 124.714 105.918) (xy 115.824 105.918) (xy 111.379 101.473) (xy 104.14 101.473)
+				(xy 124.714 105.918) (xy 115.824 105.918) (xy 111.379 101.473) (xy 104.14 101.473)
 			)
 		)
 	)

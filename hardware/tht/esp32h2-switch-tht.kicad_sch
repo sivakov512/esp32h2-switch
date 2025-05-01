@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "ESP32-H2 smart switch")
-		(date "2025-03-27")
-		(rev "1")
+		(date "2025-05-01")
+		(rev "1.0")
 		(company "SIVAKOV.TECH")
-		(comment 1 "Nikita Sivakov")
+		(comment 1 "THT version for hand soldering")
 	)
 	(lib_symbols
 		(symbol "Conn_01x15_1"
