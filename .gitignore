@@ -1,9 +1,30 @@
 .DS_Store
 .cache
-/.envrc
-/.zed
-/build
-/factory
-/managed_components
-/sdkconfig
+.envrc
+
+# ESP-IDF
+build/
+sdkconfig
+sdkconfig.old
 dependencies.lock
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+*.tmp
+managed_components/
+
+# Editor configs
+.vscode/
+.idea/
+.zed/
+
+# Logs and dumps
+*.log
+*.core
+*.dmp
+
+# Factory config (не коммитим ключи!)
+factory/
+out/
