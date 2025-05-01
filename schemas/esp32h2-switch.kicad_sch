@@ -4996,6 +4996,12 @@
 		(uuid "282b246e-3730-417a-b9aa-66140d025921")
 	)
 	(junction
+		(at 146.05 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a0deba3-e6f6-454d-a0e1-1f764b803af6")
+	)
+	(junction
 		(at 74.93 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5168,12 +5174,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f145a4ee-a4c3-45fe-8236-d99cd5b5adff")
-	)
-	(junction
-		(at 146.05 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f605734a-aa28-4c44-b7b6-f7b7c4b9dd7d")
 	)
 	(junction
 		(at 46.99 106.68)
@@ -5671,6 +5671,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 63.5) (xy 165.1 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "775dc60e-4bf7-4e8b-96d7-be39174b6c2f")
+	)
+	(wire
+		(pts
 			(xy 142.24 55.88) (xy 146.05 55.88)
 		)
 		(stroke
@@ -5841,16 +5851,6 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 63.5) (xy 146.05 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3ccdfa2-b9b2-4288-bad6-3b026f76d288")
-	)
-	(wire
-		(pts
 			(xy 201.93 64.77) (xy 201.93 66.04)
 		)
 		(stroke
@@ -5921,7 +5921,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 63.5) (xy 165.1 63.5)
+			(xy 134.62 63.5) (xy 146.05 63.5)
 		)
 		(stroke
 			(width 0)
@@ -6445,7 +6445,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L24.6mm_W15.5mm_P11.44mm_Pulse_KM-4"
 			(at 69.85 43.18 0)
 			(effects
 				(font
@@ -6496,7 +6496,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0986fe3b-c641-4dc2-9668-bac6e29a7e4b")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG05"
 			(at 96.52 65.405 0)
 			(effects
 				(font
@@ -6546,7 +6546,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#FLG07")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -6702,7 +6702,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a5a4efd-7e65-4445-abec-ea0307f2eb58")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR022"
 			(at 267.97 132.08 0)
 			(effects
 				(font
@@ -6753,7 +6753,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR016")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -6769,7 +6769,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1bebfbcc-6993-49e7-a578-8c803526f000")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 210.82 150.114 0)
 			(effects
 				(font
@@ -6786,7 +6786,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
 			(at 210.82 144.78 0)
 			(effects
 				(font
@@ -6822,7 +6822,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -6915,7 +6915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2506e1a5-18ce-4891-96a0-c50a53dac92b")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR014"
 			(at 177.8 142.24 0)
 			(effects
 				(font
@@ -6965,7 +6965,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR08")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7046,7 +7046,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a5c3401-6fd0-4bc9-8203-e43aaa6eb843")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR05"
 			(at 39.37 175.26 0)
 			(effects
 				(font
@@ -7097,7 +7097,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR017")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7130,7 +7130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L26.5mm_W5.0mm_P22.50mm_MKS4"
 			(at 77.1652 54.61 0)
 			(effects
 				(font
@@ -7182,7 +7182,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3382fc64-dadb-4853-83fe-1d743f0b0ac0")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR02"
 			(at 35.56 106.68 0)
 			(effects
 				(font
@@ -7233,7 +7233,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR04")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -7384,7 +7384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bc3f94b-34ed-4901-b8ae-7145c3a6059f")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR013"
 			(at 177.8 132.08 0)
 			(effects
 				(font
@@ -7435,7 +7435,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR07")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7451,7 +7451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c6b0028-fdfa-4229-80a4-6579ae42e396")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR08"
 			(at 66.04 177.8 0)
 			(effects
 				(font
@@ -7502,7 +7502,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR020")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7588,7 +7588,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4ea2459b-e588-4322-bee9-569f07a873ca")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 219.71 113.792 90)
 			(effects
 				(font
@@ -7640,7 +7640,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -7744,7 +7744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51989330-8752-4fb6-bc7a-9688e8011ee9")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR011"
 			(at 106.68 97.79 0)
 			(effects
 				(font
@@ -7795,7 +7795,7 @@
 		(instances
 			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR05")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7811,7 +7811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54e43e26-34d1-4999-9f49-68d1da781ec7")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR018"
 			(at 223.52 33.02 0)
 			(effects
 				(font
@@ -7862,77 +7862,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 146.05 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55125a00-eba3-48ae-ad79-b8f294b777f9")
-		(property "Reference" "C7"
-			(at 149.86 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 uF 35 V"
-			(at 149.86 60.9599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.0152 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 146.05 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b8204882-daa5-4e3a-a29e-9f5cc68d4474")
-		)
-		(pin "2"
-			(uuid "ba42c7cd-f0cf-465d-a32a-cc14652d6e2a")
-		)
-		(instances
-			(project ""
-				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "C7")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7947,7 +7877,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55490a44-d79b-4f27-a446-2ea9a8c0a537")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR020"
 			(at 224.79 99.06 0)
 			(effects
 				(font
@@ -7997,7 +7927,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR011")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8014,7 +7944,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5911dd5a-2774-4c85-a6b3-92f341379e9d")
-		(property "Reference" "R1"
+		(property "Reference" "R3"
 			(at 213.36 104.14 90)
 			(effects
 				(font
@@ -8066,7 +7996,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "R1")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -8254,7 +8184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 202.8952 41.91 0)
 			(effects
 				(font
@@ -8322,7 +8252,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 			(at 156.21 43.18 0)
 			(effects
 				(font
@@ -8463,7 +8393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f7e8fa7-a4c8-471b-84e1-13f613f54e5f")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR07"
 			(at 66.04 175.26 0)
 			(effects
 				(font
@@ -8514,7 +8444,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR019")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -8663,7 +8593,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77180e48-5af4-4795-a61f-cd081a4205cc")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR03"
 			(at 46.99 43.18 0)
 			(effects
 				(font
@@ -8713,7 +8643,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR01")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8811,7 +8741,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 162.8648 34.29 0)
 			(effects
 				(font
@@ -8863,7 +8793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7eeff489-20b6-48f7-9369-4c35117e0c10")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR012"
 			(at 116.84 106.68 0)
 			(effects
 				(font
@@ -8914,7 +8844,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR06")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -8929,7 +8859,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "83125365-c53f-4e18-9952-e37b67eb73f1")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG06"
 			(at 215.9 31.115 0)
 			(effects
 				(font
@@ -8979,7 +8909,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#FLG05")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -9063,7 +8993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ccbd79c-3e5b-4285-be9b-fa2dfe65c39a")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR021"
 			(at 255.27 109.22 0)
 			(effects
 				(font
@@ -9113,7 +9043,77 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR015")
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 146.05 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f06260e-f938-4f88-842e-fb5fe2b5c9ff")
+		(property "Reference" "C7"
+			(at 149.86 57.5309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF 35V"
+			(at 149.86 60.0709 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_Tantal_D6.0mm_P2.50mm"
+			(at 147.0152 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 146.05 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34b76378-a6ed-4785-90fc-dbff947e70a3")
+		)
+		(pin "2"
+			(uuid "53b50ff5-87af-4564-9983-c77ed6d89edf")
+		)
+		(instances
+			(project "esp32h2-switch"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -9197,7 +9197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "99a3576b-c458-41f3-a75c-db4bcf784354")
-		(property "Reference" "J2"
+		(property "Reference" "J3"
 			(at 221.234 99.06 0)
 			(effects
 				(font
@@ -9216,7 +9216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 242.57 97.79 0)
 			(effects
 				(font
@@ -9291,7 +9291,7 @@
 		(instances
 			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "J2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -9307,7 +9307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9cef3516-1c68-45da-b1f3-d11bf74f591f")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR016"
 			(at 201.93 73.66 0)
 			(effects
 				(font
@@ -9357,7 +9357,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR012")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -9373,7 +9373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d825f32-30d6-44b4-b6d7-0e445c9fb1ca")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR010"
 			(at 60.96 177.8 0)
 			(effects
 				(font
@@ -9424,7 +9424,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR022")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -9509,7 +9509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3674abb-a742-4c68-a3da-112c7d04829a")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR01"
 			(at 45.72 97.79 0)
 			(effects
 				(font
@@ -9560,7 +9560,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR03")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -9576,7 +9576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4dcfab6-56bf-480e-ae37-775473c4c833")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR09"
 			(at 60.96 175.26 0)
 			(effects
 				(font
@@ -9627,7 +9627,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR021")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -9661,7 +9661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 115.2652 60.96 0)
 			(effects
 				(font
@@ -9729,7 +9729,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_THT:L_Toroid_Vertical_L24.6mm_W15.5mm_P11.44mm_Pulse_KM-4"
 			(at 69.85 58.42 0)
 			(effects
 				(font
@@ -9876,7 +9876,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
 			(at 183.8452 41.91 0)
 			(effects
 				(font
@@ -9928,7 +9928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1653a39-7eee-499f-8d60-a1804f49c764")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR06"
 			(at 39.37 177.8 0)
 			(effects
 				(font
@@ -9979,7 +9979,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR018")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -9995,7 +9995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3c41746-7a95-49c9-af75-b93923840233")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR04"
 			(at 46.99 58.42 0)
 			(effects
 				(font
@@ -10046,7 +10046,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR02")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -10062,7 +10062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a71e66-69b1-4c5f-bc12-da80f20e7ba6")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 204.47 59.6899 0)
 			(effects
 				(font
@@ -10080,7 +10080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 200.152 60.96 90)
 			(effects
 				(font
@@ -10116,7 +10116,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -10132,7 +10132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c685af33-be12-4666-982d-6ce5a4f2de5e")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR017"
 			(at 209.55 147.32 0)
 			(effects
 				(font
@@ -10183,7 +10183,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR010")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -10198,7 +10198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c9ad9b7a-7d64-4366-9ad3-168b4d313ae3")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG07"
 			(at 215.9 45.085 0)
 			(effects
 				(font
@@ -10248,7 +10248,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#FLG06")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -10410,7 +10410,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d88d4bc4-7e49-4323-ab8a-eaf246f9cb96")
-		(property "Reference" "J3"
+		(property "Reference" "J1"
 			(at 35.56 171.958 0)
 			(effects
 				(font
@@ -10463,7 +10463,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "J3")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -10497,7 +10497,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 187.6552 64.77 0)
 			(effects
 				(font
@@ -10548,7 +10548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3411e23-ae59-4f18-835c-2f418415552e")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR015"
 			(at 184.15 110.49 0)
 			(effects
 				(font
@@ -10599,7 +10599,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR09")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -10700,7 +10700,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f03ad2ed-dc5e-4c21-b1e4-4d33a5dffe13")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR019"
 			(at 213.36 43.18 0)
 			(effects
 				(font
@@ -10751,7 +10751,7 @@
 		(instances
 			(project "esp32h2-switch"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "#PWR014")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -10841,7 +10841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f96d91c9-131a-461b-ae1a-74a8485475a1")
-		(property "Reference" "R3"
+		(property "Reference" "R1"
 			(at 204.47 49.5299 0)
 			(effects
 				(font
@@ -10859,7 +10859,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 200.152 50.8 90)
 			(effects
 				(font
@@ -10895,7 +10895,7 @@
 		(instances
 			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811"
-					(reference "R3")
+					(reference "R1")
 					(unit 1)
 				)
 			)
