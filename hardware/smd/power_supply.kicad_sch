@@ -5413,7 +5413,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 113.9952 132.08 0)
 			(effects
 				(font
@@ -5548,7 +5548,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 172.72 79.248 90)
 			(effects
 				(font
@@ -5883,7 +5883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L26.5mm_W5.0mm_P22.50mm_MKS4"
+		(property "Footprint" ""
 			(at 80.9752 66.04 0)
 			(effects
 				(font
@@ -6020,7 +6020,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 177.292 88.9 90)
 			(effects
 				(font
@@ -6224,7 +6224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 60.6552 132.08 0)
 			(effects
 				(font
@@ -6870,7 +6870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+		(property "Footprint" ""
 			(at 172.4152 46.99 0)
 			(effects
 				(font
@@ -6938,7 +6938,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" ""
 			(at 85.09 124.46 0)
 			(effects
 				(font
@@ -7077,7 +7077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "KiCadX_Capacitors_THT:CP_Radial_D5.0mm_P1.50mm"
+		(property "Footprint" ""
 			(at 97.4852 132.08 0)
 			(effects
 				(font
@@ -7281,7 +7281,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" ""
 			(at 133.35 55.88 0)
 			(effects
 				(font
@@ -7434,7 +7434,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+		(property "Footprint" ""
 			(at 128.27 39.37 0)
 			(effects
 				(font
@@ -7588,7 +7588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "KiCadX_Capacitors_THT:CP_Radial_D5.0mm_P1.50mm"
+		(property "Footprint" ""
 			(at 44.1452 132.08 0)
 			(effects
 				(font
@@ -7657,7 +7657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" ""
 			(at 172.72 97.536 0)
 			(effects
 				(font
@@ -8133,7 +8133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-4_W7.62mm"
+		(property "Footprint" ""
 			(at 163.83 90.17 0)
 			(effects
 				(font
@@ -8212,7 +8212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 150.8252 46.99 0)
 			(effects
 				(font
@@ -8557,7 +8557,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 133.0452 91.44 0)
 			(effects
 				(font
@@ -8693,7 +8693,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:Diode_Bridge_DIP-4_W7.62mm_P5.08mm"
+		(property "Footprint" ""
 			(at 96.52 73.025 0)
 			(effects
 				(font
@@ -8970,7 +8970,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 177.292 81.28 90)
 			(effects
 				(font
@@ -9107,7 +9107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 172.4152 67.31 0)
 			(effects
 				(font
@@ -9176,7 +9176,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm"
+		(property "Footprint" ""
 			(at 150.8252 67.31 0)
 			(effects
 				(font
@@ -9247,7 +9247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Varistor:RV_Disc_D9mm_W3.4mm_P5mm"
+		(property "Footprint" ""
 			(at 47.752 62.23 90)
 			(effects
 				(font
@@ -9360,7 +9360,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KiCadX_FuseHolders_THT:FuseHolder_THT_5x20mm_PTF76_RM15mm"
+		(property "Footprint" ""
 			(at 43.18 57.658 90)
 			(effects
 				(font
