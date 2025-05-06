@@ -608,7 +608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" ""
 			(at 196.85 88.9 0)
 			(effects
 				(font
@@ -678,7 +678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" ""
 			(at 95.25 87.63 0)
 			(effects
 				(font
