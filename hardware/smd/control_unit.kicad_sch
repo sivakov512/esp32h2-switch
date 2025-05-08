@@ -727,10 +727,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -739,19 +736,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 0 3.81 0)
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal"
-				(at 0 -3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -772,7 +771,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Two pin crystal"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -799,10 +798,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
 					)
 					(stroke
 						(width 0)
@@ -814,7 +813,31 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.54 0) (xy -2.032 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -837,19 +860,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 -1.27) (xy 1.905 1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.905 0)
+						(xy 0 3.556) (xy 0 3.81)
 					)
 					(stroke
 						(width 0)
@@ -859,8 +870,44 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -3.81) (xy 0 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Crystal_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -880,7 +927,7 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 5.08 270)
 					(length 1.27)
 					(name "2"
 						(effects
@@ -890,6 +937,42 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2342,7 +2425,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:Relay_SPDT"
+		(symbol "Relay:Relay_SPST-NO"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2355,7 +2438,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Relay_SPDT"
+			(property "Value" "Relay_SPST-NO"
 				(at 11.43 1.27 0)
 				(effects
 					(font
@@ -2383,7 +2466,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Relay SPDT, monostable, EN50005"
+			(property "Description" "Relay SPST, normally open, EN50005"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2392,7 +2475,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "1P2T 1-Form-C single pole throw"
+			(property "ki_keywords" "1P1T 1-Form-A single pole throw NO"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2401,7 +2484,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Relay?SPDT*"
+			(property "ki_fp_filters" "Relay?SPST*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2410,7 +2493,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Relay_SPDT_0_0"
+			(symbol "Relay_SPST-NO_0_0"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
@@ -2424,7 +2507,7 @@
 					)
 				)
 			)
-			(symbol "Relay_SPDT_0_1"
+			(symbol "Relay_SPST-NO_0_1"
 				(rectangle
 					(start -10.16 5.08)
 					(end 10.16 -5.08)
@@ -2533,18 +2616,6 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy 2.54 2.54) (xy 3.175 3.175) (xy 2.54 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
 						(xy 3.175 0) (xy 3.81 0)
 					)
 					(stroke
@@ -2580,7 +2651,7 @@
 					)
 				)
 			)
-			(symbol "Relay_SPDT_1_1"
+			(symbol "Relay_SPST-NO_1_1"
 				(pin passive line
 					(at -5.08 7.62 270)
 					(length 2.54)
@@ -2618,24 +2689,6 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 5.08 -7.62 90)
 					(length 2.54)
 					(name "~"
@@ -2645,7 +2698,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2824,7 +2877,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_NPN_BCE"
+		(symbol "Transistor_BJT:Q_NPN_BEC"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2841,7 +2894,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NPN_BCE"
+			(property "Value" "Q_NPN_BEC"
 				(at 5.08 -1.27 0)
 				(effects
 					(font
@@ -2868,7 +2921,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "NPN transistor, base/collector/emitter"
+			(property "Description" "NPN transistor, base/emitter/collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2886,7 +2939,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Q_NPN_BCE_0_1"
+			(symbol "Q_NPN_BEC_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -2923,7 +2976,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BCE_1_1"
+			(symbol "Q_NPN_BEC_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -2988,7 +3041,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3006,7 +3059,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3495,8 +3548,8 @@
 	)
 	(text_box "RELAY CONTROL"
 		(exclude_from_sim no)
-		(at 57.15 124.206 0)
-		(size 90.17 35.56)
+		(at 57.15 123.952 0)
+		(size 94.996 35.814)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3538,16 +3591,16 @@
 		(uuid "0de1e733-dfa5-4954-a2a6-3973d4270500")
 	)
 	(junction
-		(at 140.97 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0dfd0a3e-36c3-4b15-b2fa-1e8ee2b13b68")
-	)
-	(junction
 		(at 68.58 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10960925-cbf4-4d5f-9973-1b2b7a9240c8")
+	)
+	(junction
+		(at 176.53 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37fe69d5-3fbc-48e5-b98c-f266d814b627")
 	)
 	(junction
 		(at 204.47 41.91)
@@ -3556,16 +3609,16 @@
 		(uuid "3a8a7100-4440-4ff3-8f59-a2fa07315b45")
 	)
 	(junction
-		(at 214.63 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c73f8d8-5cda-4953-8bca-b1de9c6b20f2")
-	)
-	(junction
 		(at 127 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4744db12-8e6c-40c9-8622-2b08536af6cf")
+	)
+	(junction
+		(at 133.35 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5415ab72-e43b-4d71-9051-9700071002ba")
 	)
 	(junction
 		(at 97.79 143.51)
@@ -3574,22 +3627,10 @@
 		(uuid "559cf950-f1c8-4da0-8da6-615d37c1b21b")
 	)
 	(junction
-		(at 196.85 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "60065faf-7b8a-4f4a-a085-e9ddc9efb13a")
-	)
-	(junction
-		(at 214.63 146.05)
+		(at 214.63 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67311b27-7a36-4ba0-b4f8-a89b8c500afe")
-	)
-	(junction
-		(at 196.85 146.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "718ec8a1-33bc-4fcf-9787-d827ad2a8b23")
 	)
 	(junction
 		(at 97.79 130.81)
@@ -3616,16 +3657,10 @@
 		(uuid "8e8c106b-8234-4e65-b383-e3bdf49de81b")
 	)
 	(junction
-		(at 133.35 135.89)
+		(at 196.85 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a66a3d2-8b62-456d-96de-102daa232d12")
-	)
-	(junction
-		(at 176.53 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ce5403f-0e00-4b35-ae78-a2355cb2a5c3")
+		(uuid "9356b93c-d169-4591-81e7-0331922be481")
 	)
 	(junction
 		(at 223.52 41.91)
@@ -3638,6 +3673,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a124f3b8-f27e-43e0-b8b5-59bc2c278bfb")
+	)
+	(junction
+		(at 196.85 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f253c3-fa62-431a-afd9-0cecef7b60e8")
 	)
 	(junction
 		(at 210.82 60.96)
@@ -3688,6 +3729,18 @@
 		(uuid "e0d45ff8-ac63-4ac4-942f-89ffef7e262f")
 	)
 	(junction
+		(at 146.05 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef0933db-e66e-4449-87a1-0afdb8d0be94")
+	)
+	(junction
+		(at 214.63 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f3b1ff40-d63e-45d4-8d0e-5038b87fa52e")
+	)
+	(junction
 		(at 191.77 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3704,10 +3757,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f93e5c52-2df4-43f0-95bb-38eabcb42eb0")
-	)
-	(no_connect
-		(at 90.17 151.13)
-		(uuid "9da903fb-f213-476b-9f0c-e6fa30ab5dce")
 	)
 	(bus_entry
 		(at 144.78 67.31)
@@ -3973,7 +4022,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 146.05) (xy 219.71 146.05)
+			(xy 214.63 154.94) (xy 219.71 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4023,16 +4072,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 114.3) (xy 176.53 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "133f13c3-9d5a-494c-bd6a-f28343be12ed")
-	)
-	(wire
-		(pts
 			(xy 133.35 134.62) (xy 133.35 135.89)
 		)
 		(stroke
@@ -4063,6 +4102,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 154.94) (xy 214.63 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c1d339-84af-47ce-8d62-772348c81ac5")
+	)
+	(wire
+		(pts
 			(xy 191.77 53.34) (xy 191.77 60.96)
 		)
 		(stroke
@@ -4073,7 +4122,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 146.05) (xy 196.85 146.05)
+			(xy 176.53 154.94) (xy 196.85 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4113,7 +4162,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 143.51) (xy 140.97 143.51)
+			(xy 138.43 143.51) (xy 146.05 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4143,7 +4192,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 127) (xy 187.96 127)
+			(xy 181.61 134.62) (xy 196.85 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4283,7 +4332,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 144.78) (xy 140.97 143.51)
+			(xy 146.05 144.78) (xy 146.05 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4293,7 +4342,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 138.43) (xy 196.85 138.43)
+			(xy 190.5 147.32) (xy 196.85 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4313,16 +4362,6 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 146.05) (xy 214.63 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c8f7047-28e8-4480-a1fc-897b94512fe0")
-	)
-	(wire
-		(pts
 			(xy 68.58 143.51) (xy 74.93 143.51)
 		)
 		(stroke
@@ -4333,7 +4372,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 138.43) (xy 182.88 138.43)
+			(xy 176.53 147.32) (xy 182.88 147.32)
 		)
 		(stroke
 			(width 0)
@@ -4373,7 +4412,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 138.43) (xy 219.71 146.05)
+			(xy 219.71 147.32) (xy 219.71 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4413,7 +4452,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 106.68) (xy 187.96 106.68)
+			(xy 176.53 106.68) (xy 196.85 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4433,7 +4472,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 120.65) (xy 187.96 119.38)
+			(xy 196.85 124.46) (xy 196.85 127)
 		)
 		(stroke
 			(width 0)
@@ -4713,7 +4752,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 135.89) (xy 140.97 135.89)
+			(xy 133.35 135.89) (xy 146.05 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4943,7 +4982,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 113.03) (xy 187.96 114.3)
+			(xy 196.85 116.84) (xy 196.85 114.3)
 		)
 		(stroke
 			(width 0)
@@ -5033,7 +5072,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 109.22) (xy 181.61 127)
+			(xy 181.61 109.22) (xy 181.61 134.62)
 		)
 		(stroke
 			(width 0)
@@ -5103,6 +5142,26 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 147.32) (xy 214.63 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8992fc5-4d18-46cd-80d9-b51dcfaa9e73")
+	)
+	(wire
+		(pts
+			(xy 176.53 114.3) (xy 176.53 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dabe5a1e-ada4-4f8e-8bc1-3939ce3bc173")
+	)
+	(wire
+		(pts
 			(xy 185.42 53.34) (xy 185.42 60.96)
 		)
 		(stroke
@@ -5113,13 +5172,23 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 138.43) (xy 214.63 146.05)
+			(xy 214.63 147.32) (xy 214.63 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df63290c-b24f-4047-a3fd-6b8a9b410b9b")
+	)
+	(wire
+		(pts
+			(xy 203.2 120.65) (xy 201.93 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e01f3030-5e79-4aad-8ea7-f9736272b9e3")
 	)
 	(wire
 		(pts
@@ -5130,16 +5199,6 @@
 			(type default)
 		)
 		(uuid "e862c9df-67ee-4a66-afbd-11600902d592")
-	)
-	(wire
-		(pts
-			(xy 196.85 138.43) (xy 214.63 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "efeb95fd-4a36-4de6-98c1-0bb3f5a802a6")
 	)
 	(wire
 		(pts
@@ -5200,6 +5259,16 @@
 			(type default)
 		)
 		(uuid "fdf27f2f-b561-4d54-8989-7141b6a86f01")
+	)
+	(wire
+		(pts
+			(xy 190.5 120.65) (xy 191.77 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe0ed8db-41d8-4743-8a62-f8413084d0fa")
 	)
 	(label "${/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad/758f794a-fa4d-451c-bf0b-12229bccd962:REFERENCE}VDD8"
 		(at 223.52 59.69 90)
@@ -5332,7 +5401,7 @@
 		(uuid "6e6962b3-d69e-41e1-b787-16b4df322f89")
 	)
 	(label "RF_IN"
-		(at 213.36 138.43 180)
+		(at 213.36 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5498,15 +5567,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 144.78 0)
+		(at 146.05 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0074b3e0-8887-4c9f-a179-328adf11e792")
 		(property "Reference" "#PWR036"
-			(at 140.97 151.13 0)
+			(at 146.05 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5585,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 140.97 149.86 0)
+			(at 146.05 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5523,7 +5593,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 144.78 0)
+			(at 146.05 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5532,7 +5602,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 144.78 0)
+			(at 146.05 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +5611,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 144.78 0)
+			(at 146.05 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5637,6 +5707,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "07e7ca68-7fe3-448a-98b0-68c1116ad3bc")
 		(property "Reference" "C14"
 			(at 168.91 47.498 90)
@@ -5656,7 +5727,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 173.6852 53.34 0)
 			(effects
 				(font
@@ -5683,6 +5754,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d1e8f96f-fae4-47f2-8e0e-c9b27e602134")
 		)
@@ -5700,7 +5780,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 187.96 123.19 0)
+		(at 196.85 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5709,7 +5789,7 @@
 		(fields_autoplaced yes)
 		(uuid "0abefe23-bc7e-4590-984a-d4f5a8c8ff4b")
 		(property "Reference" "C20"
-			(at 191.77 121.9199 0)
+			(at 200.66 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +5798,7 @@
 			)
 		)
 		(property "Value" "8p 10V C0G"
-			(at 191.77 124.4599 0)
+			(at 200.66 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5726,8 +5806,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 188.9252 127 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 197.8152 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +5816,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 123.19 0)
+			(at 196.85 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5825,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 187.96 123.19 0)
+			(at 196.85 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C237455"
+			(at 196.85 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5769,79 +5858,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BCE")
-		(at 133.35 140.97 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0c8b8c2b-afa8-4e93-a91e-74abc3bbcb02")
-		(property "Reference" "Q1"
-			(at 133.35 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN, 40V, 500mA"
-			(at 133.35 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "NPN transistor, base/collector/emitter"
-			(at 133.35 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f17c15a9-a06d-4d39-8e3e-4990f1504e0b")
-		)
-		(pin "1"
-			(uuid "b39f6919-3f82-4306-919f-2c247d4febe0")
-		)
-		(pin "3"
-			(uuid "f309ae63-f81b-4546-8073-813eee717b5d")
-		)
-		(instances
-			(project "esp32h2-switch-smd"
-				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 204.47 49.53 0)
 		(unit 1)
@@ -5849,8 +5865,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "0d7c7b78-8243-458d-82c0-b729d2af6597")
-		(property "Reference" "C21"
+		(property "Reference" "C23"
 			(at 203.2 47.498 90)
 			(effects
 				(font
@@ -5869,7 +5886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 205.4352 53.34 0)
 			(effects
 				(font
@@ -5896,6 +5913,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 204.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0baccba8-c23e-42cd-a4df-60bf6a0f0a84")
 		)
@@ -5905,7 +5931,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C21")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -5919,8 +5945,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "1f925f10-bf34-4407-96f5-fd6a0503b7bc")
-		(property "Reference" "C22"
+		(property "Reference" "C24"
 			(at 209.55 47.498 90)
 			(effects
 				(font
@@ -5939,7 +5966,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 211.7852 53.34 0)
 			(effects
 				(font
@@ -5966,6 +5993,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 210.82 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9bd0f4a-c54a-4db6-8c88-57a9d11ee436")
 		)
@@ -5975,7 +6011,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C22")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -5990,6 +6026,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2019b40c-2e82-41a4-a2c3-26949161f47e")
 		(property "Reference" "R10"
 			(at 193.04 96.012 90)
@@ -6007,7 +6044,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 193.04 103.378 90)
 			(effects
 				(font
@@ -6026,6 +6063,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 193.04 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C25744"
 			(at 193.04 101.6 0)
 			(effects
 				(font
@@ -6057,6 +6103,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "20fae8cb-cbfb-4121-90fa-07c250cbe729")
 		(property "Reference" "D6"
 			(at 114.3 135.89 90)
@@ -6076,7 +6123,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 111.76 137.16 0)
 			(effects
 				(font
@@ -6112,6 +6159,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C2286"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "32ff0abf-0469-42fd-966b-9c32eec184b3")
 		)
@@ -6128,6 +6184,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 190.5 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2393fb68-3154-4adc-a610-6b4c3b2d49b4")
+		(property "Reference" "#PWR038"
+			(at 190.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 190.5 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ca62b10-547b-47f6-97fc-8c3f93644f5c")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 66.04 153.67 90)
 		(unit 1)
@@ -6135,6 +6257,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "2506e1a5-18ce-4891-96a0-c50a53dac92b")
 		(property "Reference" "#PWR029"
 			(at 69.85 153.67 0)
@@ -6146,11 +6269,12 @@
 			)
 		)
 		(property "Value" "L_IN"
-			(at 60.198 153.67 90)
+			(at 62.23 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6201,6 +6325,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "32cba174-856c-4f9c-a9fb-bfc891ba5756")
 		(property "Reference" "#PWR035"
 			(at 125.73 106.68 0)
@@ -6269,7 +6394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "365eaefe-3b29-4d33-8143-de09aac1f0c1")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR043"
 			(at 233.68 60.96 0)
 			(effects
 				(font
@@ -6320,7 +6445,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR042")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -6353,7 +6478,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305A"
 			(at 116.84 74.93 0)
 			(effects
 				(font
@@ -6372,6 +6497,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 116.84 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C18078070"
 			(at 116.84 80.01 0)
 			(effects
 				(font
@@ -6464,7 +6598,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 196.85 142.24 180)
+		(at 196.85 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6472,8 +6606,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c74246c-7c3e-424f-b319-bdc7637a3bc4")
-		(property "Reference" "C26"
-			(at 200.66 140.9699 0)
+		(property "Reference" "C21"
+			(at 200.66 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6481,8 +6615,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.2p 10V C0G"
-			(at 200.66 143.5099 0)
+		(property "Value" "2.2p 10V C0G"
+			(at 200.66 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6490,8 +6624,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 195.8848 138.43 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 195.8848 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6500,7 +6634,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 142.24 0)
+			(at 196.85 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6643,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 196.85 142.24 0)
+			(at 196.85 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C710732"
+			(at 196.85 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6526,7 +6669,7 @@
 		(instances
 			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C26")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6542,7 +6685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "420797b1-8f7b-49da-b98e-72fe471dcf3b")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR045"
 			(at 271.78 149.86 0)
 			(effects
 				(font
@@ -6593,7 +6736,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR044")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6607,6 +6750,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "49bac907-7bc2-4663-9d4b-bd7a5d929211")
 		(property "Reference" "#PWR039"
 			(at 208.28 92.71 0)
@@ -6675,7 +6819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a52bd91-533c-43b2-a41a-edab6ce88d43")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR047"
 			(at 271.78 154.94 0)
 			(effects
 				(font
@@ -6726,7 +6870,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR046")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6742,7 +6886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b1cd977-2831-4e21-b639-42f5a5d921a3")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR046"
 			(at 271.78 152.4 0)
 			(effects
 				(font
@@ -6793,7 +6937,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR045")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -6808,6 +6952,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "4ea2459b-e588-4322-bee9-569f07a873ca")
 		(property "Reference" "R5"
 			(at 105.41 125.222 90)
@@ -6825,7 +6970,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 105.41 132.588 90)
 			(effects
 				(font
@@ -6844,6 +6989,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 105.41 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C105875"
 			(at 105.41 130.81 0)
 			(effects
 				(font
@@ -6886,7 +7040,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "40V, 1A"
+		(property "Value" "40V 1A"
 			(at 100.33 138.4299 90)
 			(effects
 				(font
@@ -6895,7 +7049,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-323"
 			(at 97.79 137.16 0)
 			(effects
 				(font
@@ -6940,6 +7094,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C191023"
+			(at 97.79 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30351fa6-8dd4-483c-b872-18a2f8a92046")
 		)
@@ -6963,8 +7126,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "53d150dc-d3bd-4be9-bdf0-d727912d39b0")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 177.8 47.498 90)
 			(effects
 				(font
@@ -6983,7 +7147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 180.0352 53.34 0)
 			(effects
 				(font
@@ -7010,6 +7174,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 179.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ce083cf4-e98e-4473-9d51-29a5e40154dc")
 		)
@@ -7019,7 +7192,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -7034,6 +7207,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "5911dd5a-2774-4c85-a6b3-92f341379e9d")
 		(property "Reference" "R6"
 			(at 114.3 113.03 90)
@@ -7051,7 +7225,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 114.3 121.158 90)
 			(effects
 				(font
@@ -7078,6 +7252,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C25091"
+			(at 114.3 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "22c214a0-2211-4725-8d8d-a301ad676654")
 		)
@@ -7094,43 +7277,124 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:Relay_SPDT")
-		(at 82.55 148.59 270)
+		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(at 133.35 140.97 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "64127324-69d5-4042-867b-87c1f721e76e")
-		(property "Reference" "K1"
-			(at 82.55 133.35 90)
+		(uuid "604d12bf-0f71-4ab6-a1d5-096505466b16")
+		(property "Reference" "Q1"
+			(at 133.35 147.32 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SPDT, 5V 72R, 10A 250VAC"
-			(at 82.55 135.89 90)
+		(property "Value" "NPN, 40V, 500mA"
+			(at 133.35 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 81.28 160.02 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 130.81 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "NPN transistor, base/emitter/collector"
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C383232"
+			(at 133.35 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3f5929a-ac9f-450e-bfae-faf434c7cb3f")
+		)
+		(pin "3"
+			(uuid "1f4da825-877b-4831-8520-90a018ebface")
+		)
+		(pin "2"
+			(uuid "6423cf3b-aa7a-444a-a2e2-61d73f5d7f5b")
+		)
+		(instances
+			(project ""
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 196.85 120.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "65376da2-b986-4d75-a832-b9082d777a1e")
+		(property "Reference" "Y1"
+			(at 202.692 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Value" "32MHz ±10ppm CL8pF"
+			(at 202.692 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 196.85 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 148.59 0)
+			(at 196.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7138,8 +7402,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Relay SPDT, monostable, EN50005"
-			(at 82.55 148.59 0)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 196.85 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7147,25 +7411,31 @@
 				(hide yes)
 			)
 		)
-		(pin "A2"
-			(uuid "20cce55a-984e-4a63-92bf-dc273807b899")
+		(property "JLCPCB" "C2965582"
+			(at 196.85 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "12"
-			(uuid "1e6fb9c2-45b5-4fcf-afb8-8eb4f91d6302")
+		(pin "4"
+			(uuid "416662b4-345a-430b-a45e-6e6225dad1f1")
 		)
-		(pin "11"
-			(uuid "ca15f438-7112-47d0-9fd9-d9f40beac4a3")
+		(pin "3"
+			(uuid "d22ebadc-a827-44ca-a4ea-c1c39749d8eb")
 		)
-		(pin "14"
-			(uuid "fff0e62f-c120-41b4-96de-95b9513b5cfc")
+		(pin "2"
+			(uuid "ce3900b8-653f-4778-9743-46240b827cf7")
 		)
-		(pin "A1"
-			(uuid "990fe587-f701-4016-9f9d-606de59e2d90")
+		(pin "1"
+			(uuid "5117c7e1-8b3c-4b36-88ec-51c68f7ad563")
 		)
 		(instances
-			(project "esp32h2-switch-smd"
+			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "K1")
+					(reference "Y1")
 					(unit 1)
 				)
 			)
@@ -7179,6 +7449,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "65e8d9be-503c-46e4-89db-e4957e1a71c7")
 		(property "Reference" "D5"
 			(at 99.06 113.03 0)
@@ -7196,7 +7467,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 99.06 119.38 0)
 			(effects
 				(font
@@ -7232,6 +7503,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C2288"
+			(at 99.06 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bb0e3ab6-8cc6-4efc-9cae-8c57a37dea6c")
 		)
@@ -7255,6 +7535,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "758f794a-fa4d-451c-bf0b-12229bccd962")
 		(property "Reference" "U5"
 			(at 167.132 73.406 0)
@@ -7274,7 +7555,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "KiCadX_MCU_Espressif:TQFN_32_1EP_4x4mm_P0.4mm_EP2.4x2.4mm_Compact"
 			(at 129.54 67.31 0)
 			(effects
 				(font
@@ -7296,6 +7577,15 @@
 		)
 		(property "Description" "2.4 GHz IEEE 802.15.4 + BLE 5 LE MCU, 32-bit RISC-V, 32 GPIO, QFN3"
 			(at 129.54 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C22470214"
+			(at 154.94 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7421,7 +7711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75b8ba6e-fae7-43b9-824d-944896482d29")
-		(property "Reference" "C25"
+		(property "Reference" "C27"
 			(at 234.95 49.1489 0)
 			(effects
 				(font
@@ -7439,7 +7729,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
 			(at 230.1748 45.72 0)
 			(effects
 				(font
@@ -7466,6 +7756,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C22387966"
+			(at 231.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d12f1f06-300a-45a2-b623-425f7c912510")
 		)
@@ -7475,7 +7774,7 @@
 		(instances
 			(project ""
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C25")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -7489,8 +7788,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "8128fd69-4ed9-4c62-8d3c-1cae89769d75")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR042"
 			(at 243.84 41.91 0)
 			(effects
 				(font
@@ -7541,7 +7841,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR041")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7549,7 +7849,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 176.53 142.24 180)
+		(at 176.53 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7557,8 +7857,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82c8b4dc-f38e-42b1-a271-fcfd2a470757")
-		(property "Reference" "C27"
-			(at 180.34 140.9699 0)
+		(property "Reference" "C15"
+			(at 180.34 149.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7567,7 +7867,7 @@
 			)
 		)
 		(property "Value" "1.2p 10V C0G"
-			(at 180.34 143.5099 0)
+			(at 180.34 152.3999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7575,8 +7875,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 175.5648 138.43 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 175.5648 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7585,7 +7885,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 142.24 0)
+			(at 176.53 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7594,7 +7894,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 142.24 0)
+			(at 176.53 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C285021"
+			(at 176.53 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7611,7 +7920,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C27")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -7619,15 +7928,16 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna_Chip")
-		(at 217.17 135.89 0)
+		(at 217.17 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "862f46c1-231a-40b7-bcf2-033d79b7e207")
 		(property "Reference" "AE1"
-			(at 217.17 129.54 0)
+			(at 217.17 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7636,7 +7946,7 @@
 			)
 		)
 		(property "Value" "AH316M245001-T"
-			(at 217.17 132.08 0)
+			(at 217.17 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7644,8 +7954,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 214.63 131.445 0)
+		(property "Footprint" "KiCadX_Antennas_SMD:AH316M245001_T"
+			(at 214.63 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7653,8 +7963,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 214.63 131.445 0)
+		(property "Datasheet" "../datasheets/AH316M245001_T.pdf"
+			(at 214.63 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7663,7 +7973,16 @@
 			)
 		)
 		(property "Description" "Ceramic chip antenna with pin for PCB trace"
-			(at 217.17 135.89 0)
+			(at 217.17 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C3285031"
+			(at 217.17 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7694,8 +8013,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "87eedd50-91a5-4cb2-a0e3-0cefd1a4139e")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 190.5 47.498 90)
 			(effects
 				(font
@@ -7714,7 +8034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 192.7352 53.34 0)
 			(effects
 				(font
@@ -7741,6 +8061,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 191.77 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a40227df-7591-42fa-81f7-b50e9afb3feb")
 		)
@@ -7750,7 +8079,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -7758,7 +8087,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 187.96 110.49 0)
+		(at 196.85 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7767,7 +8096,7 @@
 		(fields_autoplaced yes)
 		(uuid "91fda062-09d2-4ba1-8ad7-a599b3c4a8a2")
 		(property "Reference" "C19"
-			(at 191.77 109.2199 0)
+			(at 200.66 109.2199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7776,7 +8105,7 @@
 			)
 		)
 		(property "Value" "8p 10V C0G"
-			(at 191.77 111.7599 0)
+			(at 200.66 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7784,8 +8113,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 188.9252 114.3 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 197.8152 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7794,7 +8123,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 187.96 110.49 0)
+			(at 196.85 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7803,7 +8132,16 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 187.96 110.49 0)
+			(at 196.85 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C237455"
+			(at 196.85 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7834,6 +8172,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "9709959f-a69d-4502-b2c8-c858fe0897e2")
 		(property "Reference" "J3"
 			(at 114.3 95.504 0)
@@ -7852,7 +8191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 114.3 104.14 0)
 			(effects
 				(font
@@ -7871,6 +8210,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 114.3 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C2691448"
 			(at 114.3 104.14 0)
 			(effects
 				(font
@@ -7902,15 +8250,16 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 140.97 139.7 0)
+		(at 146.05 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a3905bd2-0d8b-4935-ace4-d50f5187c983")
 		(property "Reference" "R9"
-			(at 143.002 138.43 0)
+			(at 148.082 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7919,7 +8268,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 143.002 140.97 0)
+			(at 148.082 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7927,8 +8276,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 139.192 139.7 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 144.272 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7937,7 +8286,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 139.7 0)
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7946,7 +8295,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 140.97 139.7 0)
+			(at 146.05 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C25744"
+			(at 146.05 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,8 +8402,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "ac061dcd-5c4b-46f9-89f0-05385decb95e")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 184.15 47.498 90)
 			(effects
 				(font
@@ -8064,7 +8423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 186.3852 53.34 0)
 			(effects
 				(font
@@ -8091,6 +8450,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d5c13116-f8e8-46ed-88dd-a1942eea5673")
 		)
@@ -8100,7 +8468,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -8114,6 +8482,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b311d26b-2c5a-416f-b161-914e8cb4ee49")
 		(property "Reference" "#PWR030"
 			(at 86.36 156.21 0)
@@ -8125,11 +8494,12 @@
 			)
 		)
 		(property "Value" "L_OUT"
-			(at 96.012 156.21 90)
+			(at 93.98 156.2099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -8180,6 +8550,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "b43441f9-ae76-4314-aaa8-467dd100fb11")
 		(property "Reference" "#PWR032"
 			(at 101.6 80.01 0)
@@ -8239,76 +8610,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal")
-		(at 187.96 116.84 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8807054-4048-4043-b0ac-834e3a5f5bdb")
-		(property "Reference" "Y1"
-			(at 191.77 115.5699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "32MHz ±10ppm CL8pF"
-			(at 191.77 118.1099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Two pin crystal"
-			(at 187.96 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "73a131d1-d889-42f0-83ce-524122f22381")
-		)
-		(pin "1"
-			(uuid "286bb454-7337-49e6-82db-2cabd37c0ed5")
-		)
-		(instances
-			(project ""
-				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "R_1")
 		(lib_id "Device:R")
 		(at 116.84 88.9 270)
@@ -8318,6 +8619,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "cb3820bb-55d5-4032-b7f1-d2bdb2174dc3")
 		(property "Reference" "R7"
 			(at 116.84 83.312 90)
@@ -8335,7 +8637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 116.84 90.678 90)
 			(effects
 				(font
@@ -8354,6 +8656,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 116.84 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C25744"
 			(at 116.84 88.9 0)
 			(effects
 				(font
@@ -8385,6 +8696,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "d02d954d-3fb4-44c2-8878-32ffdd1f2ce2")
 		(property "Reference" "R8"
 			(at 135.382 129.54 0)
@@ -8404,7 +8716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 131.572 130.81 90)
 			(effects
 				(font
@@ -8423,6 +8735,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 133.35 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C105875"
 			(at 133.35 130.81 0)
 			(effects
 				(font
@@ -8456,7 +8777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6ca6c72-4fab-489c-9db4-a9f53ae974fc")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR044"
 			(at 271.78 147.32 0)
 			(effects
 				(font
@@ -8507,7 +8828,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR043")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8521,6 +8842,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "da2174f5-a715-4872-8cec-1fe38d7c9479")
 		(property "Reference" "#PWR037"
 			(at 154.94 125.73 0)
@@ -8586,6 +8908,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e3411e23-ae59-4f18-835c-2f418415552e")
 		(property "Reference" "#PWR031"
 			(at 85.09 119.38 0)
@@ -8652,8 +8975,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e4003bc2-e80b-4c88-8d76-34241d7fa54e")
-		(property "Reference" "C24"
+		(property "Reference" "C26"
 			(at 222.25 47.498 90)
 			(effects
 				(font
@@ -8672,7 +8996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 224.4852 53.34 0)
 			(effects
 				(font
@@ -8699,6 +9023,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 223.52 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4075990d-992e-491d-953c-b12fcdfa2ed9")
 		)
@@ -8708,7 +9041,74 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C24")
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 203.2 120.65 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e782c1bd-5e50-424f-b144-6e4a21855790")
+		(property "Reference" "#PWR041"
+			(at 203.2 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 203.2 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de33d94-d17d-48ce-9b84-76455f58eb94")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -8740,7 +9140,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_TL3305A"
 			(at 193.04 87.63 0)
 			(effects
 				(font
@@ -8759,6 +9159,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 193.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C18078070"
 			(at 193.04 92.71 0)
 			(effects
 				(font
@@ -8790,8 +9199,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "e8cbd2a6-85f7-4932-9f34-0984c9785939")
-		(property "Reference" "C18"
+		(property "Reference" "C22"
 			(at 196.85 47.498 90)
 			(effects
 				(font
@@ -8810,7 +9220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 199.0852 53.34 0)
 			(effects
 				(font
@@ -8837,6 +9247,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 198.12 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "348e11d5-faf0-4386-ab54-8177e0f1c8c6")
 		)
@@ -8846,7 +9265,91 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C18")
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:Relay_SPST-NO")
+		(at 82.55 148.59 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef940e00-654c-466e-aaa6-002a348090d2")
+		(property "Reference" "K1"
+			(at 82.55 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPST, 5V 72R, 10A 250VAC"
+			(at 82.55 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KiCadX_Relays_THT:Relay_SPST_OJ_SH_105HM_000"
+			(at 81.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Relay SPST, normally open, EN50005"
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "OJ-SH-105HM,000"
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "12369b83-0ae0-41c3-a244-1a5da7b4912e")
+		)
+		(pin "A2"
+			(uuid "758878e6-dea0-4f4e-b777-b00ea07bf8ee")
+		)
+		(pin "13"
+			(uuid "45044eba-9b3e-4c12-a003-600175d6103a")
+		)
+		(pin "14"
+			(uuid "3aa9ad3e-4a3b-44ff-809b-277d76cdadde")
+		)
+		(instances
+			(project ""
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
+					(reference "K1")
 					(unit 1)
 				)
 			)
@@ -8862,7 +9365,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4dfa11b-4154-4df7-bad0-3a933630ef41")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 271.78 157.48 0)
 			(effects
 				(font
@@ -8913,7 +9416,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -8921,7 +9424,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 186.69 138.43 90)
+		(at 186.69 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8930,7 +9433,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb60d17a-f3e8-4ae3-ae56-0212718939df")
 		(property "Reference" "L2"
-			(at 186.69 133.35 90)
+			(at 186.69 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8938,15 +9441,15 @@
 			)
 		)
 		(property "Value" "3.9 nH"
-			(at 186.69 135.89 90)
+			(at 186.69 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 186.69 138.43 0)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 186.69 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8955,7 +9458,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 138.43 0)
+			(at 186.69 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8964,7 +9467,16 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 186.69 138.43 0)
+			(at 186.69 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C77109"
+			(at 186.69 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9063,8 +9575,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "fe07078b-f39c-4873-86d1-966a218a4cc0")
-		(property "Reference" "C23"
+		(property "Reference" "C25"
 			(at 215.9 47.498 90)
 			(effects
 				(font
@@ -9083,7 +9596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 218.1352 53.34 0)
 			(effects
 				(font
@@ -9110,6 +9623,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C309458"
+			(at 217.17 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1329a09b-8e8e-467d-b128-8516bd160054")
 		)
@@ -9119,7 +9641,7 @@
 		(instances
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edecc3f9-a7b9-410f-8550-e60d1ac272ad"
-					(reference "C23")
+					(reference "C25")
 					(unit 1)
 				)
 			)
