@@ -766,7 +766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "KiCadX_NetTies:NetTie_2_D0.5_P4.0"
 			(at 110.49 91.44 0)
 			(effects
 				(font
@@ -836,7 +836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "KiCadX_NetTies:NetTie_2_D0.5_P4.0"
 			(at 110.49 87.63 0)
 			(effects
 				(font
