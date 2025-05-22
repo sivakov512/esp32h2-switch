@@ -383,6 +383,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 87.63) (xy 154.94 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175c9e18-5f12-408a-afea-0e07a9727ca4")
+	)
+	(wire
+		(pts
 			(xy 102.87 107.95) (xy 191.77 107.95)
 		)
 		(stroke
@@ -423,6 +433,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 99.06) (xy 187.96 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a52be7-fed2-48cd-8d95-ec5f60c0b6c9")
+	)
+	(wire
+		(pts
 			(xy 100.33 91.44) (xy 102.87 91.44)
 		)
 		(stroke
@@ -450,16 +470,6 @@
 			(type default)
 		)
 		(uuid "9a259586-c145-4565-9b1b-cfad7bdb9f67")
-	)
-	(wire
-		(pts
-			(xy 182.626 99.06) (xy 187.96 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9adf9478-fd4e-4ad3-a379-d3d1bc741465")
 	)
 	(wire
 		(pts
@@ -510,16 +520,6 @@
 			(type default)
 		)
 		(uuid "c9e77cd5-ed8c-4c51-8f0e-9f421276f2be")
-	)
-	(wire
-		(pts
-			(xy 144.78 87.63) (xy 154.94 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d86b87d0-ff90-4239-8a28-90bfce39170e")
 	)
 	(wire
 		(pts
@@ -766,7 +766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "KiCadX_NetTies:NetTie_2_D0.5_P4.0"
+		(property "Footprint" "PCM_SKC_NetTies:NetTie_2_D0.5_P4.0"
 			(at 110.49 91.44 0)
 			(effects
 				(font
@@ -836,7 +836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "KiCadX_NetTies:NetTie_2_D0.5_P4.0"
+		(property "Footprint" "PCM_SKC_NetTies:NetTie_2_D0.5_P4.0"
 			(at 110.49 87.63 0)
 			(effects
 				(font
@@ -972,7 +972,7 @@
 	)
 	(sheet
 		(at 154.94 84.328)
-		(size 27.686 17.78)
+		(size 27.94 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1045,7 +1045,7 @@
 			)
 		)
 		(pin "L_OUT" output
-			(at 182.626 99.06 0)
+			(at 182.88 99.06 0)
 			(uuid "2cc2a93c-7546-4303-a403-2eca02276a90")
 			(effects
 				(font
