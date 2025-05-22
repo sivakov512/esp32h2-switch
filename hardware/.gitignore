@@ -5,6 +5,7 @@
 *.kicad_prl
 *.kicad_sch-bak
 *.lck
+*/production/*
 *~
 \#auto_saved_files\#
 _autosave*
