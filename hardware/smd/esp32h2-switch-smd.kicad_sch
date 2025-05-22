@@ -635,7 +635,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C5188438"
+		(property "LCSC PN" "C5188438"
 			(at 196.85 88.9 0)
 			(effects
 				(font
@@ -714,7 +714,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C5188438"
+		(property "LCSC PN" "C5188438"
 			(at 95.25 87.63 0)
 			(effects
 				(font
