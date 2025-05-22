@@ -3775,7 +3775,7 @@
 	)
 	(rectangle
 		(start 230.505 29.845)
-		(end 267.335 53.975)
+		(end 267.335 60.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -3795,6 +3795,17 @@
 			(justify left top)
 		)
 		(uuid "1679a0ba-b169-4d9b-b906-6a67cb0ec783")
+	)
+	(text "doesn't require power flag\nbecause of T1"
+		(exclude_from_sim no)
+		(at 252.984 49.784 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+			)
+			(justify left)
+		)
+		(uuid "1bed3382-ab2f-4d64-a3b7-a7660fe4538b")
 	)
 	(text "AC - 5V"
 		(exclude_from_sim no)
@@ -5099,6 +5110,16 @@
 		)
 		(uuid "6f88e39a-3a37-414b-80f8-6d2424681bb1")
 	)
+	(label "AUX"
+		(at 127 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2c54abb-3a1c-484e-b374-9ddb03ea2563")
+	)
 	(label "L"
 		(at 46.99 68.58 0)
 		(effects
@@ -5378,6 +5399,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 242.57 57.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a9f5b18-225c-40ff-9249-5a1123b505a0")
+		(property "Reference" "#PWR060"
+			(at 246.38 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AUX"
+			(at 238.76 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1513a27a-658d-44ef-b87d-1e3705f267c0")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 121.92 85.09 90)
 		(unit 1)
@@ -5439,6 +5527,73 @@
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 242.57 52.07 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "122e9b6b-aaf4-45d7-ab5a-85845f78e0b7")
+		(property "Reference" "#FLG05"
+			(at 244.475 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 246.38 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03c7b3d1-e305-4e76-864f-206f65523778")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -5594,6 +5749,73 @@
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 242.57 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "156a2dac-dcb0-4cd5-8dc3-c82e672f98f4")
+		(property "Reference" "#PWR059"
+			(at 246.38 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DRAIN"
+			(at 238.76 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4dbd5a7-2000-429c-b8cd-f38cf10ee587")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -5804,6 +6026,73 @@
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
 					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 242.57 57.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1fe355a0-ee28-4ed1-9143-5ae943e3c8d6")
+		(property "Reference" "#FLG07"
+			(at 244.475 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 246.38 57.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 242.57 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52aa756c-4696-4aba-8c26-215af7f54e22")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -6515,6 +6804,73 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
+		(at 242.57 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a78d11a-7887-4483-b3c9-0340b0e3db43")
+		(property "Reference" "#PWR058"
+			(at 246.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VRECT"
+			(at 238.76 52.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 242.57 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71c7f113-9950-4bf0-96fa-46629b46984b")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
 		(at 267.97 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6575,6 +6931,73 @@
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 242.57 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fa46ea4-4dd9-4ed1-8a64-92cc1920ffe2")
+		(property "Reference" "#FLG06"
+			(at 244.475 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 246.38 54.6099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b32bd9c-daec-4d57-afb2-d0346e5fcf57")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -6684,7 +7107,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KiCadX_ACDC_Converters_SMD:VIPER06_SSO10"
+		(property "Footprint" "PCM_SKC_ACDC_Converters_SMD:STMicroelectronics_VIPER06_SSO10"
 			(at 109.22 87.63 0)
 			(effects
 				(font
@@ -6822,6 +7245,73 @@
 			(project "esp32h2-switch-smd"
 				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 242.57 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "522fc56d-8417-4560-8d6a-f51a6c8f57b8")
+		(property "Reference" "#PWR057"
+			(at 238.76 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_P"
+			(at 246.38 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd3f26be-c0dc-4ad9-945f-05f760bb0879")
+		)
+		(instances
+			(project "esp32h2-switch-smd"
+				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7145,7 +7635,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KiCadX_Transformers_THT:Wurth_750370423_THT_E13"
+		(property "Footprint" "PCM_SKC_Transformers_THT:Wurth_750370423_THT_E13"
 			(at 118.11 52.07 0)
 			(effects
 				(font
@@ -7829,73 +8319,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 242.57 49.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9331313a-30bc-45e7-8d08-0a1c696148da")
-		(property "Reference" "#FLG05"
-			(at 244.475 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 246.38 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 242.57 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 242.57 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 242.57 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b63c6441-8d29-44d3-b0b8-37aa66c85aaa")
-		)
-		(instances
-			(project "esp32h2-switch-smd"
-				(path "/e6db0464-d5ed-455b-a2e6-781edb73e811/edde4759-9db5-453d-98b2-48dad0f2bc08"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Thermistor")
 		(at 55.88 68.58 90)
 		(unit 1)
@@ -7921,7 +8344,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KiCadX_Thermistors_THT:NTC10D_7_Disc_D7.0mm_P5.0mm"
+		(property "Footprint" "PCM_SKC_Thermistors_THT:NTC10D_7_Disc_D7.0mm_P5.0mm"
 			(at 55.88 68.58 0)
 			(effects
 				(font
@@ -8499,7 +8922,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "KiCadX_Capacitors_THT:CP_Radial_D6.0mm_P2.50mm"
+		(property "Footprint" "PCM_SKC_Capacitors_THT:CP_Radial_D6.0mm_P2.50mm"
 			(at 136.8552 55.88 0)
 			(effects
 				(font
@@ -9153,7 +9576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KiCadX_Inductors_THT:TDK_B82720K_Vertical_13x9.5mm_P10x7.5mm"
+		(property "Footprint" "PCM_SKC_Inductors_THT:TDK_B82720K_Vertical_13x9.5mm_P10x7.5mm"
 			(at 71.12 64.77 0)
 			(effects
 				(font
@@ -9663,7 +10086,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse_Littelfuse_395Series"
+		(property "Footprint" "Fuse:Fuse_Littelfuse_395Series"
 			(at 43.18 70.358 90)
 			(effects
 				(font
