@@ -1800,7 +1800,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KiCadX_ACDC_Converters:VIPER06"
+		(symbol "PCM_SKC_ACDC_Converters:VIPER06"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1835,7 +1835,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "${KICADX_LIBS}/datasheets/viper06.pdf"
+			(property "Datasheet" "https://cdn.jsdelivr.net/gh/sivakov512/kicad-library@master/datasheets/ACDC_Converters/STMicroelectronics_VIPER06.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2596,7 +2596,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Footprint" "KiCadX_Transformers_THT:Wurth_750370423_THT_E13"
+			(property "Footprint" "SKC_Transformers_THT:Wurth_750370423_THT_E13"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2606,7 +2606,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "${KICADX_LIBS}/datasheets/750370423.pdf"
+			(property "Datasheet" "https://cdn.jsdelivr.net/gh/sivakov512/kicad-library@master/datasheets/Transformers/Wurth_750370423.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6659,7 +6659,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KiCadX_ACDC_Converters:VIPER06")
+		(lib_id "PCM_SKC_ACDC_Converters:VIPER06")
 		(at 109.22 87.63 0)
 		(mirror y)
 		(unit 1)
@@ -7120,7 +7120,7 @@
 	)
 	(symbol
 		(lib_name "Wurth_750370423_1")
-		(lib_id "KiCadX_Transformers:Wurth_750370423")
+		(lib_id "PCM_SKC_Transformers:Wurth_750370423")
 		(at 118.11 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
