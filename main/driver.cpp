@@ -1,9 +1,10 @@
 #include <driver/gpio.h>
+#include "soc/gpio_num.h"
 
 #include "driver.h"
 
-static const gpio_num_t kRelayGPIO = GPIO_NUM_5;
-static const gpio_num_t kLedGPIO = GPIO_NUM_4;
+static const gpio_num_t kRelayGPIO = GPIO_NUM_27;
+static const gpio_num_t kLedGPIO = GPIO_NUM_26;
 
 Driver::Driver() : relay_gpio_(kRelayGPIO), led_gpio_(kLedGPIO) {}
 
