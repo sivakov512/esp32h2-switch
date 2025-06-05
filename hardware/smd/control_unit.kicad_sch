@@ -5940,7 +5940,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "8p 10V C0G"
+		(property "Value" "15p 10V C0G"
 			(at 188.722 119.38 0)
 			(effects
 				(font
@@ -8614,7 +8614,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "8p 10V C0G"
+		(property "Value" "15p 10V C0G"
 			(at 215.392 127 0)
 			(effects
 				(font
